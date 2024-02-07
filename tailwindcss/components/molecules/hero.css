@@ -1,0 +1,38 @@
+@layer components {
+  .hero {
+    @apply w-full bg-cover bg-no-repeat relative;
+
+    &:before {
+      content: "";
+      @apply absolute left-0 top-0 w-full h-full;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.32) 0%, #000 100%);
+    }
+
+    .caption {
+      @apply block py-14 max-w-[704px] relative;
+
+      h1 {
+        @apply text-semantic-white text-heading-3-lg font-body font-medium mb-2;
+      }
+
+      .custom-description-container {
+        overflow: hidden;
+        max-height: 120px;
+        transition: max-height 0.3s ease;
+        margin-bottom: 16px;
+
+        &.open {
+          max-height: 100%;
+        }
+      }
+
+      p {
+        @apply text-semantic-white text-body-1 mb-4;
+
+        a {
+          @apply text-primary-100;
+        }
+      }
+    }
+  }
+}

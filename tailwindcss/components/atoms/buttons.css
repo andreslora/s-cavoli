@@ -1,0 +1,65 @@
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-full px-4 md:px-9 font-display font-normal cursor-pointer uppercase;
+  
+    &.btn-large {
+      @apply h-[52px] text-[18px];
+    }
+  
+    &.btn-medium {
+      @apply h-[44px] text-body-1 px-8;
+    }
+  
+    &.btn-small {
+      @apply h-[44px] text-[20px] text-body-2;
+    }
+  
+    &:disabled {
+      @apply !bg-neutral-100 text-neutral-90 pointer-events-none cursor-not-allowed;
+    }
+  
+    i.right {
+      @apply ml-3;
+    }
+  
+    i.left {
+      @apply mr-3;
+    }
+  }
+  
+  .btn-icon {
+    @apply inline-flex items-center justify-center rounded-full cursor-pointer;
+  
+    &.btn-large {
+      @apply h-12 min-w-[48px] max-w-[48px];
+    }
+  
+    &.btn-medium {
+      @apply h-10 min-w-[40px] max-w-[40px];
+    }
+  
+    &.btn-small {
+      @apply h-8 min-w-[32px] max-w-[32px];
+    }
+  }
+  
+  .btn-primary {
+    @apply border-2 border-semantic-white text-semantic-white;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-semantic-black text-semantic-black;
+  }
+  
+  .btn-tertiary {
+    @apply !bg-semantic-black text-semantic-white;
+  }
+
+  .btn-cuaternarios {
+    @apply flex items-center gap-3 px-0 text-semantic-black hover:text-neutral-80;
+
+    span {
+      @apply underline;
+    }
+  }
+}

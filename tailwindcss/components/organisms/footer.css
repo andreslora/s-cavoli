@@ -1,0 +1,95 @@
+@layer components {
+  footer {
+    @apply w-full bg-semantic-black relative pt-20 md:pt-[120px] pb-12 md:pb-[60px];
+
+    &:after {
+      content: "";
+      @apply absolute bottom-0 right-0 bg-no-repeat bg-contain w-[400px] xxl:w-[450px] xxxl:w-[590px] h-[338px] bg-bottom hidden md:block;
+      background-image: url('../img/bg-footer.png');
+    }
+
+    .container-fluid {
+      @apply pl-4 lg:pl-8 xxl:pl-20 xxxl:pl-[100px] pr-4 lg:pr-8 xxl:pr-[100px] xxxl:pr-[200px] 3xl:pr-[232px] relative z-10;
+
+      .newsletter {
+        @apply block max-w-full lg:max-w-[600px] xl:max-w-[740px] 3xl:max-w-[860px] min-w-full lg:min-w-[600px] xl:min-w-[740px] 3xl:min-w-[860px];
+
+        .description {
+          @apply block space-y-3 max-w-[534px] pb-12 md:pb-[76px];
+
+          h3 {
+            @apply text-semantic-white text-[32px] md:text-[52px] leading-[44px] md:leading-[56px] font-body font-light tracking-[1.04px];
+          }
+
+          p {
+            @apply text-semantic-white text-body-1 md:text-heading-4-lg font-body2 font-light uppercase;
+          }
+        }
+
+        .form-newsletter {
+          @apply block space-y-6 md:space-y-10;
+
+          .form-group {
+            @apply w-full relative;
+
+            &.error {
+              small {
+                @apply block md:absolute top-0 right-0 text-semantic-error text-body-2 md:text-lead-md md:leading-6 font-body2 font-light mt-2 md:mt-0;
+              }
+
+              .form-control {
+                @apply border-semantic-error;
+              }
+            }
+
+            .form-control {
+              @apply w-full bg-semantic-black text-semantic-white placeholder:text-semantic-white border-b-2 border-semantic-white pb-2 md:pb-4 outline-0 text-[16px] md:text-[20px] leading-6 font-body2 font-normal;
+            }
+
+            small {
+              @apply hidden;
+            }
+          }
+        }
+
+        .message-sent {
+          @apply border-t border-primary-100 pt-6 mt-6;
+
+          p {
+            @apply text-semantic-white text-lead-lg font-body2 font-normal;
+          }
+        }
+      }
+
+      .main-nav-footer {
+        @apply block max-w-full md:max-w-[300px] 3xl:max-w-[400px] min-w-full md:min-w-[300px] 3xl:min-w-[400px];
+
+        .btn-up {
+          @apply inline-flex items-center gap-3 text-semantic-white hover:text-neutral-80 cursor-pointer mb-4 md:mb-[74px];
+
+          i {
+            @apply text-[20px]; 
+          }
+
+          a {
+            @apply text-lead-md font-display font-medium uppercase underline;
+          }
+        }
+
+        .main-menu-footer {
+          @apply block;
+
+          li {
+            a {
+              @apply text-semantic-white hover:text-neutral-80 text-body-2 leading-5 font-body2 font-medium uppercase tracking-[0.28px];
+            }
+          }
+        }
+      }
+
+      .copy {
+        @apply text-semantic-white text-body-1 font-body2 font-light text-center md:text-left tracking-[0.32px];
+      }
+    }
+  }
+}
