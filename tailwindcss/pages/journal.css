@@ -1,11 +1,11 @@
 .content-journal {
-  @apply w-full pt-[230px] pb-[180px];
+  @apply w-full pt-[210px] md:pt-[230px] pb-[180px];
 
   > .container-fluid {
     @apply px-4 xl:px-[60px];
 
     .title {
-      @apply block space-y-6 text-center pb-8 max-w-[800px] mx-auto;
+      @apply block space-y-3 md:space-y-6 text-center pb-8 max-w-[800px] mx-auto;
 
       h1 {
         @apply text-semantic-black text-[48px] md:text-[96px] leading-[56px] md:leading-[80px] font-body font-normal uppercase;
@@ -137,7 +137,7 @@
 }
 
 .content-hero-journal {
-  @apply w-full mt-[260px] lg:mt-[290px];
+  @apply w-full mt-[210px] md:mt-[260px] lg:mt-[290px];
 
   > .container-fluid {
     @apply px-4 lg:px-6 xl:px-12 xxl:px-20 xxxl:px-[100px] 3xl:px-[230px];
@@ -156,13 +156,13 @@
   }
 
   .banner {
-    @apply w-full h-[420px] flex items-center justify-center bg-no-repeat bg-cover bg-center;
+    @apply w-full h-[320px] md:h-[420px] flex items-center justify-center bg-no-repeat bg-cover bg-center;
 
     .caption {
       @apply text-center;
 
       h1 {
-        @apply text-semantic-white text-[96px] leading-[96px] font-body font-normal uppercase;
+        @apply text-semantic-white text-[48px] md:text-[68px] lg:text-[96px] leading-[48px] md:leading-[68px] lg:leading-[96px] font-body font-normal uppercase;
       }
     }
   }

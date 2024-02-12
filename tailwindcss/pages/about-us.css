@@ -1,5 +1,5 @@
 .content-our-manifest {
-  @apply w-full pt-[240px] pb-[136px];
+  @apply w-full pt-[210px] md:pt-[240px] pb-[136px];
 
   > .container-fluid {
     @apply px-4 lg:px-[60px];

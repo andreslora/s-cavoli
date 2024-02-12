@@ -1,14 +1,14 @@
 .content-join-team {
-  @apply w-full pt-[256px] pb-[180px] !bg-semantic-black border-b border-semantic-white px-4 lg:px-12 xl:px-[60px]; 
+  @apply w-full pt-[210px] md:pt-[256px] pb-12 md:pb-[180px] !bg-semantic-black border-b border-semantic-white px-4 lg:px-12 xl:px-[60px]; 
 
   > .container-fluid {
     @apply px-4 lg:px-8 xl:px-12 xxl:px-20 xxxl:px-[140px] 3xl:px-[240px] border-t border-semantic-white;
 
     .description {
-      @apply flex flex-col md:flex-row md:items-center md:justify-between pt-16 xl:pt-[120px] pb-20;
+      @apply flex flex-col md:flex-row md:items-center md:justify-between pt-8 md:pt-16 xl:pt-[120px] pb-20;
 
       h1 {
-        @apply text-semantic-white text-[32px] md:text-[48px] leading-[48px] md:leading-[56px] font-body2 font-light;
+        @apply text-semantic-white text-[32px] md:text-[48px] leading-[36px] md:leading-[56px] font-body2 font-light;
 
         b {
           @apply font-body;
