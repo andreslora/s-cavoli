@@ -1,14 +1,14 @@
 .hero-home {
-  @apply w-full h-screen bg-no-repeat bg-cover flex items-center justify-center;
+  @apply w-full h-[800px] xl:h-[1070px] bg-no-repeat bg-cover flex items-center justify-center;
 
   > .container-fluid {
     @apply w-full px-4;
 
     .description {
-      @apply block text-center relative;
+      @apply block text-center relative mt-0 lg:mt-20 xl:mt-0;
 
       .list-networks {
-        @apply block space-y-3 absolute right-4 lg:right-12 -top-24 md:top-0;
+        @apply block space-y-3 absolute right-4 lg:right-8 xl:right-12 -top-24 md:top-4 xl:top-8;
 
         li {
           a {
@@ -18,15 +18,15 @@
       }
 
       .logo {
-        @apply flex justify-center mb-8 md:mb-10 lg:mb-20 xxl:mb-[144px];
+        @apply flex justify-center mb-8 md:mb-10 lg:mb-20 xxl:mb-[104px];
 
         img {
-          @apply h-12 md:h-16 lg:h-[100px] xxl:h-[130px] object-contain;
+          @apply h-12 md:h-16 lg:h-[85px] object-contain;
         }
       }
 
       h1 {
-        @apply text-semantic-white text-heading-1-sm md:text-heading-1-md lg:text-heading-1-lg font-body font-normal;
+        @apply text-semantic-white text-[24px] md:text-[28px] left-8 md:leading-9 font-body font-normal;
       }
     }
   }
@@ -36,7 +36,7 @@
   @apply w-full;
 
   .card-office {
-    @apply w-full h-[500px] xl:h-[640px] flex items-center justify-center bg-no-repeat bg-cover relative;
+    @apply w-full h-[330px] md:h-[400px] lg:h-[480px] flex items-center justify-center bg-no-repeat bg-cover relative;
 
     &::before {
       content: "";
@@ -49,7 +49,7 @@
     }
 
     h2 {
-      @apply text-[44px] lg:text-[64px] leading-[56px] lg:leading-[68px] text-semantic-white font-body font-normal mb-8 lg:mb-10;
+      @apply text-[44px] lg:text-[52px] leading-[56px] lg:leading-[58px] text-semantic-white font-body font-normal mb-4;
 
       b {
         @apply font-medium;
@@ -96,7 +96,7 @@
     @apply block;
 
     .description-most-recent {
-      @apply block space-y-4 pb-10 relative;
+      @apply block space-y-4 pb-8 relative;
 
       &:before{
         content: "\f102";
@@ -117,18 +117,22 @@
       }
 
       h2 {
-        @apply text-semantic-black text-[32px] md:text-[72px] leading-[36px] md:leading-[68px] font-body font-light;
+        @apply text-semantic-black text-[32px] md:text-[48px] leading-[36px] md:leading-[52px] font-body2 font-light;
+
+        span {
+          @apply block font-body font-normal;
+        }
       }
     }
 
     .mySwiper2 {
-      @apply max-w-full xl:max-w-[450px] 2xl:max-w-[500px] min-w-full xl:min-w-[450px] 2xl:min-w-[500px] relative;
+      @apply max-w-full xl:max-w-[450px] 2xl:max-w-[500px] min-w-full xl:min-w-[450px] relative;
 
       .slide {
         @apply w-full;
 
         .thumb {
-          @apply w-full h-[240px] md:h-[300px] mb-12 md:mb-[77px];
+          @apply w-full h-[240px] md:h-[275px] mb-6;
 
           img {
             @apply w-full h-full object-cover;
@@ -139,17 +143,17 @@
           @apply block;
 
           h4 {
-            @apply text-semantic-black text-[24px] md:text-[28px] leading-[28px] md:leading-[34px] font-body2 font-medium;
+            @apply text-semantic-black text-[20px] md:text-[24px] leading-[28px] md:leading-[34px] font-body2 font-medium;
           }
 
           h3 {
-            @apply text-semantic-black text-[28px] md:text-[32px] leading-[32px] md:leading-[38px] font-body2 font-light;
+            @apply text-semantic-black text-[18px] md:text-[22px] leading-[24px] font-body2 font-light;
           }
         }
       }
 
       .nav-control {
-        @apply absolute left-0 right-0 top-[65%] md:top-[68%] xl:top-[62%] w-full flex items-center justify-between z-10;
+        @apply absolute left-0 right-0 bottom-12 md:bottom-[60px] xl:bottom-[57px] w-full flex items-center justify-between z-10;
       }
     }
 
@@ -157,7 +161,7 @@
       @apply w-full;
 
       .slide {
-        @apply w-full h-[400px] md:h-[500px] xl:h-auto;
+        @apply w-full h-[320px] md:h-[500px] xl:h-[530px];
 
         img {
           @apply w-full h-full object-cover;
@@ -174,7 +178,7 @@
 
       &:before{
         content: "\f101";
-        @apply text-semantic-black text-[44px] absolute -right-16 lg:-right-16 hidden md:block;
+        @apply text-semantic-black text-[24px] absolute -right-12 lg:-right-12 top-[10px] hidden md:block;
         font-family: 'icons';
         font-weight: normal;
         font-style: normal;
@@ -191,7 +195,7 @@
       }
 
       h2 {
-        @apply text-[32px] md:text-[72px] leading-[36px] md:leading-[68px] text-semantic-black font-body2 font-light;
+        @apply text-[32px] md:text-[48px] leading-[36px] md:leading-[52px] text-semantic-black font-body2 font-light;
 
         span {
           @apply font-body font-normal;
@@ -207,9 +211,12 @@
 
         .slide {
           @apply block space-y-3 md:space-y-5 max-w-full md:max-w-[284px] min-w-full md:min-w-[284px];
-  
+          transition: max-width 0.5s ease, width 0.5s ease;
+          
+
           &.swiper-slide-active {
             @apply max-w-full md:max-w-[485px] min-w-full md:min-w-[485px];
+            width: 100%;
   
             .description {
               @apply flex flex-col md:flex-row md:justify-between gap-2 md:gap-3;
@@ -254,17 +261,17 @@
 }
 
 .banner-home {
-  @apply w-full h-[280px] md:h-[340px] lg:h-[400px] xl:h-[458px] bg-no-repeat bg-cover;
+  @apply w-full h-[280px] md:h-[340px] lg:h-[400px] bg-no-repeat bg-cover;
 }
 
 .content-dream-home {
-  @apply w-full pt-16 md:pt-[120px] pb-[100px] md:pb-[192px];
+  @apply w-full pt-16 md:pt-20 pb-[100px] md:pb-20;
 
   .description {
     @apply block space-y-3 md:space-y-0;
 
     h2 {
-      @apply md:inline text-semantic-black text-[32px] md:text-[44px] lg:text-[58px] leading-[44px] md:leading-[54px] lg:leading-[68px] font-body2 font-light;
+      @apply md:inline text-semantic-black text-[24px] md:text-[32px] lg:text-[48px] leading-[32px] md:leading-[48px] lg:leading-[52px] font-body2 font-light;
 
       span {
         @apply font-body font-normal;

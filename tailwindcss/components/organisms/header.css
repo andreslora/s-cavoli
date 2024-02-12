@@ -3,7 +3,7 @@
     @apply w-full absolute top-0 z-50;
 
     > .container-fluid {
-      @apply w-full px-4 lg:px-12 xl:px-16 xxl:px-[88px] pt-8 lg:pt-[78px];
+      @apply w-full px-4 lg:px-12 xl:px-[60px] xxl:px-[60px] pt-8 lg:pt-[78px];
 
       .main-nav {
         @apply block relative;
@@ -27,7 +27,7 @@
             @apply block;
 
             a {
-              @apply inline-flex items-center text-semantic-white text-lead-lg font-body2 font-bold;
+              @apply inline-flex items-center text-semantic-white text-[16px] leading-6 font-body2 font-bold;
             }
 
             &:hover {
@@ -42,7 +42,7 @@
 
                 &:before{
                   content: "\f105";
-                  @apply text-primary-100 text-[18px] absolute -right-6;
+                  @apply text-primary-100 text-[14px] absolute -right-6;
                   font-family: 'icons';
                   font-weight: normal;
                   font-style: normal;
@@ -68,7 +68,7 @@
         @apply block;
 
         img {
-          @apply lg:w-[360px] h-6 md:h-10 lg:h-[50px] object-contain;
+          @apply h-6 md:h-[30px] object-contain;
         }
       }
 
@@ -76,10 +76,10 @@
         @apply flex flex-col md:flex-row md:items-center gap-2 md:gap-5;
 
         a {
-          @apply inline-flex items-center gap-2 text-semantic-white hover:text-primary-100 text-body-1 md:text-lead-lg font-body2 font-normal;
+          @apply inline-flex items-center gap-2 text-semantic-white hover:text-primary-100 text-body-1 font-body2 font-normal;
         }
       }
-    }
+    } 
 
     &.header-secondary {
       .main-nav {

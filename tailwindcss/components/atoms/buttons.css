@@ -3,15 +3,15 @@
     @apply inline-flex items-center justify-center rounded-full px-4 md:px-9 font-display font-normal cursor-pointer uppercase;
   
     &.btn-large {
-      @apply h-[52px] text-[18px];
+      @apply h-[50px] text-[16px];
     }
   
     &.btn-medium {
-      @apply h-[44px] text-body-1 px-8;
+      @apply h-[40px] text-[16px] px-4;
     }
   
     &.btn-small {
-      @apply h-[44px] text-[20px] text-body-2;
+      @apply h-[36px] text-[16px];
     }
   
     &:disabled {
@@ -44,15 +44,15 @@
   }
   
   .btn-primary {
-    @apply border-2 border-semantic-white text-semantic-white;
+    @apply border border-semantic-white hover:bg-semantic-white hover:text-semantic-black text-semantic-white;
   }
   
   .btn-secondary {
-    @apply border-2 border-semantic-black text-semantic-black;
+    @apply border border-semantic-black hover:border-semantic-white hover:bg-semantic-black hover:text-semantic-white text-semantic-black;
   }
   
   .btn-tertiary {
-    @apply !bg-semantic-black text-semantic-white;
+    @apply !bg-semantic-black border border-semantic-black text-semantic-white  hover:!bg-semantic-white hover:text-semantic-black;
   }
 
   .btn-cuaternarios {
